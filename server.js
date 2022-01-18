@@ -14,9 +14,9 @@ app.get('/', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-  const { login, erp_user } = req.body
+  const { login, password } = req.body
   console.log(login);
-  if (login === "erp_user" && erp_user === "12qwaszx12qwaszx")
+  if (login === "erp_user" && password === "12qwaszx12qwaszx")
     res.send({
       login,
       name: "Екатерина",
